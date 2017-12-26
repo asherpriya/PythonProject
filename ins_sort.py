@@ -11,11 +11,12 @@ def ins_sort(ip_arr):
      ip_arr[i+1]=nxt
    return ip_arr
 
-l = random.randint(5, 100)
-arr = []
-for i in range(l):
-	arr.append(random.randint(0, 100))
+if __name__=='__main__':
+	l = random.randint(5, 100)
+	arr = []
+	for i in range(l):
+		arr.append(random.randint(0, 100))
 
-print 'Original Array', arr
-arr = ins_sort(arr)
-print 'Sorted Array', arr
+	print 'Original Array', arr
+	arr = ins_sort(arr)
+	print 'Sorted Array', arr
